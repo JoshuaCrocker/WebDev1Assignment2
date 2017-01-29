@@ -7,7 +7,7 @@
         <title>Web Development 1 Assignment 2 Examples</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="../assets/style.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -26,45 +26,36 @@
                 
                     <a class="navbar-brand" href="../">Web Dev 1 Assignment 2</a>
                 </div>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../">Back</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
 
-        <div class="container">
-            <h1>Web Development 2 Assignment 2</h1>
-        
-            <p>This site contains various mini-projects which demonstrate the capabilities of upcoming Web APIs.</p>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                        <h3 class="panel-title">Notification API</h3>
-                        </div>
-                        <div class="panel-body">
-                            <p>Send notifications to the user.</p>
-
-                            <!-- TODO: Browsers -->
-
-                            <p><a href="notification-api" class="btn btn-primary">View</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                        <h3 class="panel-title">Network Information API</h3>
-                        </div>
-                        <div class="panel-body">
-                            <p>Get network information.</p>
-
-                            <!-- TODO: Browsers -->
-
-                            <p><a href="network-information-api" class="btn btn-primary">View</a></p>
-                        </div>
-                    </div>
-                </div>
+        <header>
+            <div class="container">
+                <section>
+                    <h1>Network Information API</h1>
+                </section>
             </div>
-        </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section>
+                    <p>About API</p>
+
+                    <h2>Network Information</h2>
+
+                    <p><strong>Network Type</strong>: <span id="network-type"></span></p>
+                    <p><strong>Downlink Max</strong>: <span id="downlink-max"></span></p>
+                </section>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
     </body>
 </html>
