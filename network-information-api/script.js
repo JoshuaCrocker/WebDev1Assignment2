@@ -10,12 +10,12 @@
 
     network_type.innerHTML = type;
     downlink_max.innerHTML = downlink;
-    
+
     connection.onchange = () => {
         //console.log("Connection type is change from " + type + " to " + connection.type);
         
-        network_type.innerHTML = type;
-        downlink_max.innerHTML = downlink;
+        network_type.innerHTML = connection.type;
+        downlink_max.innerHTML = connection.downlinkMax;
     };
 })();
 
