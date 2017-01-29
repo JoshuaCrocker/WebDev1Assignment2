@@ -23,7 +23,7 @@
                 setTimeout(notification.close.bind(notification), options.closeTime);
             }
 
-            return notification
+            return notification;
         };
 
         this.sendNotification = (notification_text) => {
