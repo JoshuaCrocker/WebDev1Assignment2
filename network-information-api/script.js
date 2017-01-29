@@ -10,16 +10,13 @@
 
     network_type.innerHTML = type;
     downlink_max.innerHTML = downlink;
-
-
-    function updateConnectionStatus() {
+    
+    connection.onchange = () => {
         //console.log("Connection type is change from " + type + " to " + connection.type);
         
         network_type.innerHTML = type;
         downlink_max.innerHTML = downlink;
-    }
-
-    connection.addEventListener('typechange', updateConnectionStatus);
+    };
 })();
 
  // SOURCE: https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API
