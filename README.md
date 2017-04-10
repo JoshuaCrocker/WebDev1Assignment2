@@ -8,3 +8,11 @@ A repository of example which will be submitted for my Web Development 1 Assignm
 * Writeup
 * Add ability to tweak options
 * Warning message when notifications aren't supported
+
+### Network Information API
+* Writeup
+* Warning message when API isn't supported
+
+### Proximity API
+* Writeup
+* Warning message when API isn't supported
